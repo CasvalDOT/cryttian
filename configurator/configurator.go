@@ -54,7 +54,7 @@ func (c *configurator) readConfiguration() (map[string]interface{}, error) {
 }
 
 func (c *configurator) readTheme(themeName string) (map[string]interface{}, error) {
-	filePath := fmt.Sprintf("%s/colors/%s.yml", c.dirPath, themeName)
+	filePath := fmt.Sprintf("%s/themes/%s.yml", c.dirPath, themeName)
 	return c.readYML(filePath)
 }
 
